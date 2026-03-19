@@ -67,7 +67,6 @@ void traffic_control() {
                 count = count - 1;
             }
         }
-        _sleep(3600000);
 
     }
 }
