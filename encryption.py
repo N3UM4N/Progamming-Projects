@@ -44,6 +44,7 @@ while count < len(items):
             if data[iter] == character_array[i]:
                 deciphered = deciphered + character_array[(i - 2) + 6]
         iter = iter + 1
+    print(deciphered)
     new = ""
     for ii in range(0,len(deciphered)):
         new = new + deciphered[ii]
@@ -72,10 +73,11 @@ while outer_count < len(data_arr) and stop == False:
     outer_count = outer_count + 1
 
 outer_count = 0
-data_to_find = input("Enter logins details to find:  ")
+data_to_find = input("Enter logins details to find or all:  ")
 while outer_count < len(data_arr):
     if data_arr[outer_count][0] == str(data_to_find):
         print(data_arr[outer_count][2])
         print(data_arr[outer_count][3])
         outer_count = len(data_arr)
+    print(data_arr[outer_count])
     outer_count = outer_count + 1
